@@ -31,6 +31,34 @@ export function Section2Lessons(){
     }
 
 
+        console.log("\nOutput of a Switch/Case statement\n");
+    //Switch Statement, pretty much the same as 'C'
+
+    var grade="A";
+    switch(grade) {
+        case "A": {
+            console.log("Excellent");
+            break;
+        }
+        case "B": {
+            console.log("Good");
+            break;
+        }
+        case "C": {
+            console.log("Fair");
+            break;
+        }
+        case "D": {
+            console.log("Poor");
+            break;
+        }
+        default: {
+            console.log("Invalid choice");
+            break;
+        }
+    }
+
+
     console.log("\nOutput of a FOR loop\n");
     //the FOR Loop
     var num = 5;
