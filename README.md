@@ -20,4 +20,10 @@ knowledge and style of programming.  For example, I have skipped most of the ope
 
 <p>This lesson requires the installation of <a href="https://nodejs.org">Nodejs</a> and NPM (which install together, I think)</p>
 
-<p>The TutorialsPoint code runs with "```node es6lessons.js```" under the Javascript_node folder.  It is recommended that you use it with: "```node es6lessons.js|more```" since the code is quite lengthy</p>
+<p>The TutorialsPoint code runs with 
+        node es6lessons.js
+        
+under the Javascript_node folder.  It is recommended that you use it with: 
+        node es6lessons.js|more
+        
+since the code is quite lengthy</p>
