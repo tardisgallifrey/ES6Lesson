@@ -1,0 +1,15 @@
+<html> 
+   <head> 
+      <script type = "module"> 
+         import { ReadCookie } from "./myModules/functions.js";
+         window.ReadCookie = ReadCookie;
+      </script> 
+   </head> 
+
+   <body> 
+      <form name = "myform" action = ""> 
+         <p> click the following button and see the result:</p> 
+         <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/> 
+      </form> 
+   </body> 
+</html> 

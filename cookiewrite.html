@@ -1,0 +1,15 @@
+<html> 
+   <head> 
+      <script type = "module">  
+         import { WriteCookie } from "./myModules/functions.js";
+         window.WriteCookie = WriteCookie;
+      </script> 
+   </head> 
+      
+   <body> 
+      <form name = "myform" action = ""> 
+         Enter name: <input type = "text" name = "customer"/> 
+         <input type = "button" value = "Set" onclick = "WriteCookie();"/> 
+      </form> 
+   </body> 
+</html>

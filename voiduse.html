@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ES6 Modules</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        //According to instructions, void used here on 
+        //an immediate implemented function turns the word 
+        //function into expression instead of what it is????
+        void function iife_void() { 
+            var msg = function () {console.log("hello world")}; 
+            msg(); 
+        }();
+
+        //regular IIFE must assign to variable
+        //Do we need output from this function?
+        //Probably not, so void function negates that need above
+        var output = function iife_void2(){
+            var msg = () => console.log("hello, again");
+            msg();
+        }()
+
+        //Use developer tools in Chrome to see the output of these two functions
+        
+        
+        </script>
+
+            <!-- This is inline JavaScript use of void -->
+            <!-- The javascript:void() negates the output of the alert() in the first anchor -->
+
+        <!-- This use will produce the correct result and a browser console error -->
+        <!-- Research on a solution was not conclusive, nor possible, really -->    
+        <a href = "javascript:void(javascript:alert('hello world!!')">Click here to do nothing</a> 
+        <br/><br/><br/> 
+        <a href = "javascript:alert('hello');">Click here for an alert</a>
+        
+    </body>
+</html>

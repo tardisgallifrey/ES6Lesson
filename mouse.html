@@ -1,0 +1,19 @@
+<html> 
+   <head> 
+      <script type = "module"> 
+         import { mouseover, mouseout } from "./myModules/functions.js";
+         window.mouseover = mouseover;
+         window.mouseout = mouseout;
+      </script> 
+   </head> 
+
+   <body> 
+      <p>Bring your mouse inside the division to see the result:</p> 
+      <div>
+      <div onmouseover = "mouseover()" onmouseout = "mouseout()"> 
+         <h2> This is inside the division </h2> 
+      </div> 
+      <a href="https://www.tutorialspoint.com/es6/es6_events.htm">A Link to a list of JavaScript/HTML events.</a>
+      </div>
+   </body> 
+</html>

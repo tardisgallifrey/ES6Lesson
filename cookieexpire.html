@@ -1,0 +1,15 @@
+<html> 
+   <head> 
+      <script type = "module"> 
+         import { ExpireCookie } from "./myModules/functions.js";
+         window.ExpireCookie = ExpireCookie;
+      </script> 
+   </head> 
+
+   <body> 
+      <form name = "formname" action = ""> 
+         Enter Cookie Name: <input type = "text" name = "customer"/> 
+         <input type = "button" value = "Set Cookie" onclick = "ExpireCookie()"/> 
+      </form> 
+   </body> 
+</html> 

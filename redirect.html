@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+       <!-- Use this line if you want SEO to see your location redirects
+            as Search engines cannot see into JavaScript -->
+
+    <link rel = "canonical" href = "http://abc.com/" />
+      <script type="module"> 
+         import { newLocation } from "./myModules/functions.js";
+         window.newLocation = newLocation;
+      </script> 
+   </head> 
+
+   <body> 
+      <input type = "button" value = "Go to new location" onclick = "newLocation()"> 
+   </body> 
+</html>

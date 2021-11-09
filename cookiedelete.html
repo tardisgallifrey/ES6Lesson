@@ -1,0 +1,15 @@
+<html> 
+   <head> 
+      <script type = "text/javascript"> 
+         import { DeleteCookie } from "./myModules/functions.js";
+         window.DeleteCookie = DeleteCookie;
+      </script>
+   </head> 
+
+   <body> 
+      <form name = "formname" action = ""> 
+         Enter Cookie Name: <input type = "text" name = "customer"/> 
+         <input type = "button" value = "Set Cookie" onclick = "DeleteCookie()"/> 
+      </form> 
+   </body> 
+</html>
