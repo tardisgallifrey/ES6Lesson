@@ -124,8 +124,8 @@ console.log(val1 === val2)  // return false
 //If a new object points to an existing object, you can compare, but WHY
 var val3 = { name: "Harry" };
 var val4 = val3;
-console.log(val3 == val4)  // return false 
-console.log(val3 === val4)  // return false
+console.log(val3 == val4)  // return true
+console.log(val3 === val4)  // return true
 
 //Object destructuring or extracting data and creating new variables
 
@@ -194,5 +194,45 @@ let { address } = emp;
 console.log(address);;
 let { address: { city, pin } } = emp;
 console.log(city);
+
+
+console.log("\nObject Literals moved here.");
+
+console.log("Object literal definition, declare vars first, form object (see code).");
+let firstName = 'Tutorials',lastName='Point'
+
+   let company = {
+      firstName,
+      lastName
+   }
+
+   console.log(company)
+   console.log(company.firstName);
+   console.log(company.lastName);
+
+   console.log("\nComputed properties allows creating novel object item identiifers (see code).");
+   let suffix = 'Name'
+   let company1 = {
+      ['first'+suffix]:'Tutorials',
+      ['last'+suffix]:'Point'
+   }
+
+   console.log(company1);
+   console.log(company1['firstName']);
+   console.log(company1['lastName']);
+
+   console.log("\nConcise method syntax allows function definition as item in object (see code).");
+   console.log("Use of this keyword when using other object property identifiers in function required.");
+   let firstName99 = 'Tutorials',lastName99='Point'
+   let company2 = {
+      firstName99,
+      lastName99,
+      getFullName(){
+         return this.firstName99+" - "+this.lastName99
+      }
+   }
+   console.log(company2.getFullName());
+   console.log(company2);
+
 
 }

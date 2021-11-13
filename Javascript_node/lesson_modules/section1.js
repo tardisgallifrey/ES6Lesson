@@ -17,7 +17,7 @@ export function Section1lessons(){
 
     //Make semicolons a habit
 
-        console.log("\nOutput of console.log(), Our Hello World\n");
+    console.log("\nOutput of console.log(), Our Hello World\n");
     //First Program in JavaScript run by nodejs
     var message = "Hello World";            //Declare a var(iable) called message and fill with text
     console.log(message);                    //Publish message to terminal console or,
@@ -55,7 +55,7 @@ export function Section1lessons(){
     test();
 
 
-        console.log("\nOutput showing how LET works with scopes\n");
+    console.log("\nOutput showing how LET works with scopes\n");
     // The let declaration allows to redeclare and set scope to a variable
     //  inside a new block
     function test1() {
@@ -94,7 +94,7 @@ export function Section1lessons(){
     //console.log(no);
 
 
-        console.log("\nOutput showing use of CONST on variables and objects\n");
+    console.log("\nOutput showing use of CONST on variables and objects\n");
     // const declared variables are immutable (read only)
     //they cannot be altered from assigned state
     //Also, they must be assigned a state/value at 
@@ -168,14 +168,15 @@ export function Section1lessons(){
     //says, "unbundle this array and fill in the three requested parameters"
     console.log('sum is :',addThreeNumbers(...arr));
 
-    //Spread operator doesn't deal with mixed numbers
+    //Spread operator doesn't deal with mixed quantity of params
     //Here, it should just drop the 4. output should be 6 not 10
     console.log('sum is ',addThreeNumbers(...[1,2,3,4]));
 
 
     //The Spread operator also functions as a way of copying objects
     //copy object
-    let student1 ={firstName:'Mohtashim',company:'TutorialsPoint'}
+    let student1 ={firstName:'Mohtashim',
+                    company:'TutorialsPoint'}
 
     //copy student1 into student2
     let student2 ={...student1}

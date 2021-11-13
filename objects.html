@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <script type="module">
+        import { MyObjects } from "./myModules/functions.js";
+        window.MyObjects = MyObjects;
+    </script>
+</head>
+
+<body>
+    <pre>
+    //This is an object, a custom data TYPE
+    //formed of smaller components to form 
+    //a new multi-part thing
+    var identifier = {
+ 
+       //Scalar value type
+       //Used as "identifier.Key1"
+       const Key1: value,
+ 
+       //Function value type
+       //Used as identifier.Key2()
+       const Key2: function () {
+          //functions 
+       },
+ 
+ 
+       //Array value type
+       //Used as identifier.Key3[index]
+       const Key3: [content1, content2]
+    }
+
+    //var and const must be used to declare Keys/values.
+
+    //You can also have arrays of objects.
+
+    //Assigning a new property to object 'baz'
+   //Console will print the value of foo: bar
+   var foo = 'bar' 
+   var baz = { foo } 
+   onsole.log(baz.foo)
+
+   //You can also use the Object() constructor as follows:
+   var myCar = new Object(); 
+    myCar.make = "Ford"; //define an object 
+    myCar.model = "Mustang"; 
+    myCar.year = 1987;  
+
+    //Objects can also be built by a function, using this to 
+    //create the properties.
+    function Car() { 
+        this.make = "Ford" 
+        this.model = "F123" 
+     }  
+     
+     //Use Object.Create() to create new objects 
+     //from a prototype object
+     var roles = { 
+        type: "Admin", // Default value of properties 
+        displayType : function() {  
+           // Method which will display type of role 
+           console.log(this.type); 
+        } 
+     }  
+
+     // Create new role type called super_role 
+     var super_role = Object.create(roles); 
+     super_role.displayType(); // Output:Admin  
+     
+     // Create new role type called Guest 
+     var guest_role = Object.create(roles); 
+     guest_role.type = "Guest"; 
+     guest_role.displayType(); // Output:Guest
+
+     //Use Object.assign() to clone one 
+     //object to a new object variable
+     "use strict" 
+        var det = { name:"Tom", ID:"E1001" }; 
+        var copy = Object.assign({}, det); 
+        console.log(copy);  
+        for (let val in copy) { 
+        console.log(copy[val]) 
+        }
+    </pre>
+    <p> Click the following button and see result</p>
+    <input type="button" onclick="MyObjects()" value="Click Me" />
+</body>
+
+</html>
