@@ -1,5 +1,7 @@
 
 
+export function Section7Lessons(){
+
 //Things having to do with the Boolean() Object
 
 console.log("\nBoolean Object things.");
@@ -42,3 +44,5 @@ console.log( "flag.toString is : " + flag.toString());
 console.log("\nBoolean method .valueOf() does similar.");
 var flag = new Boolean(false);
 console.log( "flag.valueOf is : " + flag.valueOf());
+
+}
